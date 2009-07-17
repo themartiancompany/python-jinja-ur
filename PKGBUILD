@@ -1,4 +1,3 @@
-# $Id: PKGBUILD,v 1.4 2009/03/25 10:42:48 dsa Exp $
 # Contributor: Peter Baldwin <bald_pete@hotmail.com>
 
 pkgname=python-jinja
