@@ -3,7 +3,7 @@
 
 pkgname=python-jinja
 pkgver=2.5.2
-pkgrel=2
+pkgrel=3
 pkgdesc="A simple pythonic template language written in Python"
 arch=('any')
 url="http://jinja.pocoo.org/2/"
@@ -15,7 +15,7 @@ md5sums=('3829be2926a067ee024e6d3e5327dbf7')
 build() {
   cd "$srcdir/Jinja2-$pkgver"
 
-  python setup.py install --root="$pkgdir" -O1
+  python2 setup.py install --root="$pkgdir" -O1
 
   install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }
