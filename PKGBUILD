@@ -1,4 +1,4 @@
-# Maintainer: Evangelos Foutras <foutrelis@gmail.com>
+# Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Peter Baldwin <bald_pete@hotmail.com>
 
 pkgname=('python-jinja' 'python2-jinja')
