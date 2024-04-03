@@ -8,6 +8,7 @@ pkgbase = python-jinja
 	license = BSD-3-Clause
 	checkdepends = python-pytest
 	makedepends = python-setuptools
+	depends = python
 	depends = python-markupsafe
 	optdepends = python-babel: for i18n support
 	source = jinja-3.1.3.tar.gz::https://github.com/pallets/jinja/archive/refs/tags/3.1.3.tar.gz
