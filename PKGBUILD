@@ -12,7 +12,7 @@ arch=('any')
 url="https://palletsprojects.com/p/jinja/"
 license=('BSD-3-Clause')
 depends=('python' 'python-markupsafe')
-makedepends=('python-setuptools')
+makedepends=('python-build' 'python-installer' 'python-setuptools' 'python-wheel')
 optdepends=('python-babel: for i18n support')
 checkdepends=('python-pytest')
 source=($_name-$pkgver.tar.gz::https://github.com/pallets/jinja/archive/refs/tags/$pkgver.tar.gz)
@@ -24,7 +24,7 @@ prepare() {
 
 build() {
   cd $_name-$pkgver
-  python3 setup.py build
+  python -m build --wheel --no-isolation
 }
 
 check() {
@@ -42,7 +42,7 @@ check() {
 
 package() {
   cd $_name-$pkgver
-  python3 setup.py install --root="$pkgdir" --optimize=1 --skip-build
+  python -m installer -d "$pkgdir" dist/*.whl
   install -Dm644 LICENSE.rst -t "$pkgdir/usr/share/licenses/$pkgname"
 }
 
