@@ -1,4 +1,4 @@
-# Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
+# Maintainer: Evangelos Foutras <foutrelis@archlinux.org>
 # Contributor: David Runge <dave@sleepmap.de>
 # Contributor: Peter Baldwin <bald_pete@hotmail.com>
 
