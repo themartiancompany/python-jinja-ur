@@ -39,7 +39,10 @@ check() {
 
 package() {
   cd $_name-$pkgver
-  python -m installer -d "$pkgdir" dist/*.whl
+  python \
+    -m installer \
+    --dostdir="${pkgdir}" \
+    dist/*.whl
   install -Dm644 LICENSE.txt -t "$pkgdir/usr/share/licenses/$pkgname"
 }
 
