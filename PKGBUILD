@@ -41,7 +41,7 @@ package() {
   cd $_name-$pkgver
   python \
     -m installer \
-    --dostdir="${pkgdir}" \
+    --destdir="${pkgdir}" \
     dist/*.whl
   install -Dm644 LICENSE.txt -t "$pkgdir/usr/share/licenses/$pkgname"
 }
