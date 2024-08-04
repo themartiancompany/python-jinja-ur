@@ -1,3 +1,7 @@
+# SPDX-License-Identifier: AGPL-3.0
+#
+# Maintainer: Truocolo <truocolo@aol.com>
+# Maintainer: Pellegrino Prevete (tallero) <pellegrinoprevete@gmail.com>
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: David Runge <dave@sleepmap.de>
 # Contributor: Peter Baldwin <bald_pete@hotmail.com>
@@ -46,3 +50,4 @@ package() {
 }
 
 # vim:set ts=2 sw=2 et:
+
